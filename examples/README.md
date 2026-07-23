@@ -11,8 +11,6 @@ Colab / GitHub notebooks for onboarding and demos.
 
 ## Open in Google Colab
 
-After pushing `sdk/` (including `examples/`) to [veritrix-ai/veritrix-sdk](https://github.com/veritrix-ai/veritrix-sdk):
-
 - [Getting Started](https://colab.research.google.com/github/veritrix-ai/veritrix-sdk/blob/master/examples/getting_started.ipynb)
 - [Customer Support Agent](https://colab.research.google.com/github/veritrix-ai/veritrix-sdk/blob/master/examples/customer_support_agent.ipynb)
 
@@ -35,13 +33,5 @@ The customer-support notebook also installs `openai-agents`.
 | Variable | Required for | Notes |
 |---|---|---|
 | `VERITRIX_API_KEY` | Both notebooks | From Veritrix → Settings → API Keys |
-| `VERITRIX_ENDPOINT` | Both notebooks | Default `http://localhost:8001` |
+| `VERITRIX_ENDPOINT` | Both notebooks | Default `https://veritrix-ingest.onrender.com` |
 | `OPENAI_API_KEY` | Customer support only | Needed for real LLM turns |
-
-## Colab + local backend
-
-Colab runs in Google's cloud — it cannot call `http://localhost:8001` on your laptop.
-
-1. Start ingest locally
-2. Expose it: `ngrok http 8001`
-3. Set `VERITRIX_ENDPOINT` in the notebook to the ngrok HTTPS URL
