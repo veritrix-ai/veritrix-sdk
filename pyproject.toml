@@ -34,7 +34,7 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/AgentOps-AI/agentops"
+Homepage = "https://github.com/veritrix-ai/veritrix-sdk"
 Documentation = "https://docs.veritrix.xyz"
 
 [build-system]

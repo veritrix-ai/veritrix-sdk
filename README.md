@@ -7,13 +7,13 @@ Observability for multi-agent AI systems. Install in your agent project, call `v
 Until the package is on PyPI, install from GitHub:
 
 ```bash
-pip install "git+https://github.com/AgentOps-AI/agentops.git#subdirectory=sdk"
+pip install "git+https://github.com/veritrix-ai/veritrix-sdk.git"
 ```
 
 Optional framework extras:
 
 ```bash
-pip install "git+https://github.com/AgentOps-AI/agentops.git#subdirectory=sdk[langchain,crewai]"
+pip install "veritrix[langchain,crewai] @ git+https://github.com/veritrix-ai/veritrix-sdk.git"
 ```
 
 After publish to PyPI:
@@ -23,6 +23,13 @@ pip install veritrix
 # or
 pip install veritrix[langchain,crewai]
 ```
+
+## Examples
+
+Colab notebooks live in [`examples/`](./examples/):
+
+- [Getting Started](https://colab.research.google.com/github/veritrix-ai/veritrix-sdk/blob/master/examples/getting_started.ipynb)
+- [Customer Support Agent](https://colab.research.google.com/github/veritrix-ai/veritrix-sdk/blob/master/examples/customer_support_agent.ipynb)
 
 ## Quick start
 
